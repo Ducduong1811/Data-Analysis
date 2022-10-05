@@ -27,14 +27,14 @@ Khi mới nhận được một dataset, việc đầu tiên cần phải làm k
 6. Notice unexpected patterns with groups
 7. Notice group differences
 
-1. **Describe data**: 
+##### 1. **Describe data**: 
 	- Purpose: You need to look at the overall dataset, để có thể get được basic understanding về dataset này. 
 	- Code:
 	```python
 	pd.describe()
 	```
 
-2. **Explore data distribution:**
+##### 2. **Explore data distribution:**
 	1. **Check mean và median**
 	- Purpose: Sau khi đã check data toàn cảnh rồi thì có thể check từng data riêng lẻ, đặc biệt là target features
 	- Code:
@@ -58,7 +58,7 @@ fig, ax = plt.subplots(figsize=(15, 6))
 df["__"].plot(kind="box", vert=False, title="__", ax=ax)
 ```
 
-3. **Measuring variance and range**
+##### 3. **Measuring variance and range**
 	- Purpose: Tính độ spread của data feature
 	- Code:
 		```python
